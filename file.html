@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Attendance Tracker</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Date-wise Worker Attendance</h1>
+
+        <div class="controls">
+            <input type="date" id="attendance-date" required>
+            <form id="add-worker-form">
+                <input type="text" id="worker-name" placeholder="Enter worker name" required>
+                <button type="submit">Add Worker</button>
+            </form>
+        </div>
+
+        <div class="stats" id="attendance-stats">
+            Present: 0 | Absent: 0
+        </div>
+
+        <table id="worker-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Avatar</th>
+                    <th>Worker Name</th>
+                    <th>Status</th>
+                    <th>Mark Present</th>
+                    <th>Mark Absent</th>
+                </tr>
+            </thead>
+            <tbody id="worker-list">
+               
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
